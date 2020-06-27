@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="connect-four.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="name-of-game">
+      <h1>Connect <span class="four">4</span>!</h1>
+    </div>
+    <div class="board">
+      <table>
+        <tr class="row5">
+          <td class="x0y5">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column0" id="x0y5" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x1y5">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column1" id="x1y5" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x2y5">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column2" id="x2y5" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x3y5">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column3" id="x3y5" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x4y5">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column4" id="x4y5" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x5y5">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column5" id="x5y5" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x6y5">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column6" id="x6y5" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+        </tr>
+        <tr class="row4">
+          <td class="x0y4">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column0" id="x0y4" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x1y4">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column1" id="x1y4" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x2y4">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column2" id="x2y4" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x3y4">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column3" id="x3y4" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x4y4">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column4" id="x4y4" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x5y4">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column5" id="x5y4" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x6y4">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column6" id="x6y4" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+        </tr>
+        <tr class="row3">
+          <td class="x0y3">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column0" id="x0y3" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x1y3">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column1" id="x1y3" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x2y3">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column2" id="x2y3" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x3y3">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column3" id="x3y3" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x4y3">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column4" id="x4y3" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x5y3">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column5" id="x5y3" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x6y3">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column6" id="x6y3" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+        </tr>
+        <tr class="row2">
+          <td class="x0y2">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column0" id="x0y2" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x1y2">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column1" id="x1y2" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x2y2">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column2" id="x2y2" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x3y2">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column3" id="x3y2" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x4y2">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column4" id="x4y2" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x5y2">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column5" id="x5y2" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x6y2">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column6" id="x6y2" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+        </tr>
+        <tr class="row1">
+          <td class="x0y1">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column0" id="x0y1" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x1y1">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column1" id="x1y1" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x2y1">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column2" id="x2y1" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x3y1">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column3" id="x3y1" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x4y1">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column4" id="x4y1" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x5y1">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column5" id="x5y1" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x6y1">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column6" id="x6y1" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+        </tr>
+        <tr class="row0">
+          <td class="x0y0">
+            <!-- <img id="x0y0" src="face-with-monocle_1f9d0.png" alt="" width="85" height="85"> -->
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column0" id="x0y0" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x1y0">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column1" id="x1y0" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x2y0">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column2" id="x2y0" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x3y0">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column3" id="x3y0" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x4y0">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column4" id="x4y0" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x5y0">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column5" id="x5y0" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+          <td class="x6y0">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="column6" id="x6y0" cx="50" cy="50" r="50" fill="white"/>
+            </svg>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="instructions">
+      <p>Red always starts first. The color of the '4' tells you which color's move it is!!!</p>
+      <p>Just click a spot in any column to move!!!!!</p>
+      <p>Click anywhere outside of the blue game board to clear it and start over!!!!!!!</p>
+    </div>
+    <script type="text/javascript" src="connect-four.js"></script>
+  </body>
+</html>

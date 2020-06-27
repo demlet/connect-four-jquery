@@ -1,0 +1,65 @@
+h1 {
+   font-family: 'Rock Salt', cursive;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 90pt;
+   line-height: .5;
+   color: white;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+  font-style: normal;
+  line-height: .5;
+}
+
+.four {
+  color: red;
+  font-size: 120pt;
+}
+
+.name-of-game {
+  background-color: black;
+  margin: auto;
+  /* padding-top: 5px; */
+  display: flex;
+  justify-content: center;
+  height: 190px;
+}
+
+.board {
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  font-size: 50pt;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  border-spacing: 25px;
+}
+
+svg {
+  width: 85px;
+  height: 85px;
+}
+
+.instructions {
+  height: auto;
+  width: auto;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: black;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: white;
+  display: grid;
+  justify-content: center;
+}
